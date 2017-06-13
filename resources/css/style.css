@@ -1,0 +1,164 @@
+
+
+html {
+  font-family: Helvetica;
+  font-size: 18px;
+  color: white;
+}
+
+.conteiner {
+  width: 960px;
+  margin: 0 auto;
+  display: flex;
+}
+
+h2 {
+  font-size: 1rem;
+  font-weight:normal;
+}
+
+header {
+  background-color: black;
+}
+
+header .conteiner {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  }
+
+#logo {
+  height: 1.5rem;
+  padding-right: .5rem;
+  padding-left: 1rem;
+  padding-top: .66rem;
+  padding-bottom: .66rem;
+}
+
+#logo img {
+  height: 1.5rem;
+}
+
+#title h2 {
+  padding-top: .66rem;
+  padding-bottom: .66rem;
+  margin: 0;
+}
+
+#image-box {
+  background-image: url(../images/moto.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 25rem;
+  display: flex;
+}
+
+.text-box {
+  background-color: black;
+  margin-top: 9rem;
+  margin-bottom: auto;
+  padding: 2rem 3rem;
+  width: 20rem;
+}
+
+.text-box h2 {
+margin: 0 .65rem 0 0;
+}
+
+.text-box h1 {
+margin: 0;
+}
+
+
+nav {
+  background-color: firebrick;
+}
+
+nav .conteiner {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  justify-content: space-between;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+#products .conteiner {
+  justify-content: space-between;
+  margin: 3rem auto 0 auto;
+}
+
+.product {
+  width: 30%;
+}
+
+.product-img {
+  border: 4px solid black;
+  height: 9rem;
+  padding: 2rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+max-width: 8rem;
+}
+
+p {
+  background-color: black;
+}
+
+.product p {
+  text-align: center;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin: 0;
+  border: 4px solid black;
+}
+
+#location-hours .conteiner {
+  justify-content: space-between;
+  margin: 3rem auto 0 auto;
+}
+
+div .lh-box {
+  width: 35%;
+}
+
+.lh-box .text {
+  margin: 0;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+}
+
+.lh-box .number {
+  color: black;
+  background-color: white;
+  margin: 0;
+}
+
+footer {
+  background-color: black;
+}
+
+footer .conteiner {
+  margin-top: 4rem;
+  padding: 5rem 0;
+}
+
+@media only screen and (max-width: 1024px) and (orientation: landscape) {
+  .product {
+    width: 47%;
+  }
+  img.glasses-img {
+  visibility: hidden;
+  }
+  div .lh-box {
+    width: 35%;
+  }
+}
