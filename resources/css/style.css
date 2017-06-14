@@ -12,11 +12,6 @@ html {
   display: flex;
 }
 
-h2 {
-  font-size: 1rem;
-  font-weight:normal;
-}
-
 header {
   background-color: black;
 }
@@ -63,22 +58,28 @@ header .conteiner {
 }
 
 .text-box h2 {
-margin: 0 .65rem 0 0;
+  margin-bottom: .25rem;
+  font-size: 1rem;
+  font-weight: bold;
 }
 
 .text-box h1 {
-margin: 0;
+  font-size: 2rem;
+  font-weight: bold;
 }
 
-
-nav {
+nav#big-menu {
   background-color: firebrick;
 }
 
-nav .conteiner {
+nav#big-menu .conteiner {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
   justify-content: space-between;
+}
+
+nav#small-menu {
+  display: none;
 }
 
 a {
@@ -88,7 +89,7 @@ a {
 
 #products .conteiner {
   justify-content: space-between;
-  margin: 3rem auto 0 auto;
+  margin-top: 3rem;
 }
 
 .product {
@@ -105,7 +106,7 @@ a {
 }
 
 img {
-max-width: 8rem;
+  max-width: 9rem;
 }
 
 p {
@@ -122,10 +123,10 @@ p {
 
 #location-hours .conteiner {
   justify-content: space-between;
-  margin: 3rem auto 0 auto;
+  margin-top: 3rem;
 }
 
-div .lh-box {
+.lh-box {
   width: 35%;
 }
 
@@ -151,11 +152,99 @@ footer .conteiner {
   padding: 5rem 0;
 }
 
-@media only screen and (max-width: 1024px) and (orientation: landscape) {
+@media only screen and (max-width: 1024px) and (min-width: 470px) {
+  .conteiner {
+    max-width: 1024px;
+    min-width: 470px
+}
+
   .product {
     width: 47%;
   }
-  div .lh-box {
+
+  .lh-box {
     width: 35%;
+  }
+
+  nav#small-menu {
+    background-color: firebrick;
+    display: flex;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    justify-content: space-around;
+  }
+
+  nav#big-menu .conteiner {
+    display: none;
+  }
+
+  #hide-1024.product {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .conteiner {
+    max-width: 470px;
+    margin: 0 auto;
+}
+
+#image-box {
+  height: 15rem;
+}
+
+.text-box {
+  margin-top: 10rem;
+  margin-bottom: auto;
+  padding: 1rem 2rem;
+  width: 100%;
+}
+
+.text-box h2 {
+  margin-bottom: .25rem;
+  font-size: .75rem;
+  font-weight: bold;
+}
+
+.text-box h1 {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.product {
+    width: 90%;
+  }
+
+  .lh-box {
+    width: 90%;
+  }
+
+  nav#small-menu {
+    background-color: firebrick;
+    display: flex;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    justify-content: space-around;
+  }
+
+  nav#big-menu .conteiner {
+    display: none;
+  }
+
+  #hide-470.product,
+  #hide-1024.product {
+    display: none;
+  }
+
+  #products .conteiner {
+    justify-content: center;
+  }
+
+  #location-hours {
+    
+  }
+
+  #copyright p {
+
   }
 }
