@@ -152,10 +152,9 @@ footer .conteiner {
   padding: 5rem 0;
 }
 
-@media only screen and (max-width: 1024px) and (min-width: 470px) {
+@media only screen and (max-width: 1024px) {
   .conteiner {
     max-width: 100%;
-    min-width: 470px
 }
 
   .product {
