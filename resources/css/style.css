@@ -154,7 +154,7 @@ footer .conteiner {
 
 @media only screen and (max-width: 1024px) and (min-width: 470px) {
   .conteiner {
-    max-width: 1024px;
+    max-width: 100%;
     min-width: 470px
 }
 
@@ -185,19 +185,19 @@ footer .conteiner {
 
 @media only screen and (max-width: 470px) {
   .conteiner {
-    max-width: 470px;
+    max-width: 100%;
     margin: 0 auto;
 }
 
-#image-box {
-  height: 15rem;
+  #image-box {
+    height: 15rem;
 }
 
-.text-box {
-  margin-top: 10rem;
-  margin-bottom: auto;
-  padding: 1rem 2rem;
-  width: 100%;
+  .text-box {
+    margin-top: 10rem;
+    margin-bottom: auto;
+    padding: 1rem 2rem;
+    width: 100%;
 }
 
 .text-box h2 {
@@ -206,17 +206,21 @@ footer .conteiner {
   font-weight: bold;
 }
 
-.text-box h1 {
-  font-size: 1rem;
-  font-weight: bold;
-}
+  .text-box h1 {
+    font-size: 1rem;
+    font-weight: bold;
+  }
 
-.product {
+  .product {
     width: 90%;
   }
 
   .lh-box {
     width: 90%;
+  }
+
+  #location {
+    padding-bottom: 0.5rem;
   }
 
   nav#small-menu {
@@ -240,11 +244,12 @@ footer .conteiner {
     justify-content: center;
   }
 
-  #location-hours {
-    
+  #location-hours .conteiner {
+    flex-direction: column;
+    align-items: center;
   }
 
-  #copyright p {
-
+  div#copyright {
+      justify-content: center;
   }
 }
