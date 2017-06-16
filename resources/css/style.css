@@ -68,17 +68,17 @@ header .conteiner {
   font-weight: bold;
 }
 
-nav#big-menu {
+#big-menu {
   background-color: firebrick;
 }
 
-nav#big-menu .conteiner {
+#big-menu .conteiner {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
   justify-content: space-between;
 }
 
-nav#small-menu {
+#small-menu .conteiner {
   display: none;
 }
 
@@ -153,102 +153,81 @@ footer .conteiner {
 }
 
 @media only screen and (max-width: 1024px) {
-  .conteiner {
-    max-width: 100%;
+.conteiner {
+  width: 100%;
 }
 
-  .product {
-    width: 47%;
-  }
+#small-menu .conteiner {
+  background-color: firebrick;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  display: inline-flex;
+  justify-content: center;
+}
 
-  .lh-box {
-    width: 35%;
-  }
+#big-menu {
+  display: none;
+}
 
-  nav#small-menu {
-    background-color: firebrick;
-    display: flex;
-    padding-top: 0.75rem;
-    padding-bottom: 0.75rem;
-    justify-content: space-around;
-  }
+#big-menu .conteiner {
+  display: none;
+}
 
-  nav#big-menu .conteiner {
-    display: none;
-  }
+.product {
+  width: 47%;
+}
 
-  #hide-1024.product {
-    display: none;
-  }
+#hide-1024.product {
+  display: none;
+}
 }
 
 @media only screen and (max-width: 470px) {
-  .conteiner {
-    max-width: 100%;
-    margin: 0 auto;
+#image-box {
+  height: 15rem;
 }
 
-  #image-box {
-    height: 15rem;
-}
-
-  .text-box {
-    margin-top: 10rem;
-    margin-bottom: auto;
-    padding: 1rem 2rem;
-    width: 100%;
+.text-box {
+  margin-top: 10rem;
+  margin-bottom: auto;
+  padding: 1rem 2rem;
 }
 
 .text-box h2 {
   margin-bottom: .25rem;
   font-size: .75rem;
-  font-weight: bold;
 }
 
-  .text-box h1 {
-    font-size: 1rem;
-    font-weight: bold;
-  }
+.text-box h1 {
+  font-size: 1rem;
+}
 
-  .product {
-    width: 90%;
-  }
+.product {
+  width: 90%;
+}
 
-  .lh-box {
-    width: 90%;
-  }
+#products .conteiner {
+  justify-content: center;
+}
 
-  #location {
-    padding-bottom: 0.5rem;
-  }
+#hide-470.product {
+  display: none;
+}
 
-  nav#small-menu {
-    background-color: firebrick;
-    display: flex;
-    padding-top: 0.75rem;
-    padding-bottom: 0.75rem;
-    justify-content: space-around;
-  }
+.lh-box {
+  width: 90%;
+}
 
-  nav#big-menu .conteiner {
-    display: none;
-  }
+#location-hours .conteiner {
+  flex-direction: column;
+  align-items: center;
+}
 
-  #hide-470.product,
-  #hide-1024.product {
-    display: none;
-  }
+#location {
+  padding-bottom: 0.5rem;
+}
 
-  #products .conteiner {
-    justify-content: center;
-  }
-
-  #location-hours .conteiner {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  div#copyright {
-      justify-content: center;
-  }
+div#copyright {
+  justify-content: center;
+}
 }
